@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Button } from '../LandingPage.styles'
 import { Navigation, NavigationLinks } from './Navbar.styles'
 import VestiLogo from '../../img/VestiHeaderLogo.svg'
+import Headroom from 'react-headroom'
 
 
 
@@ -11,6 +12,7 @@ const Navbar = () => {
         setMobileNavigation(!mobileNavigation)
     }
     return (
+      
         
         <Navigation mobileNavigation={mobileNavigation}>
             <div className='logo'>
@@ -47,6 +49,7 @@ const Navbar = () => {
                 </NavigationLinks>
             </ul>
         </Navigation>
+       
     )
 }
 

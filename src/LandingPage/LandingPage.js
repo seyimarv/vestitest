@@ -79,10 +79,9 @@ const LandingPage = () => {
             position: 'relative',
             overflow: 'hidden'
         }}>
-        <Headroom>
+       
            <Navbar />
-        </Headroom>
-           
+        
             <Introduction>
             <Fade left duration={1000}>
                 <div className='text'>

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "../../styles/breakpoints.styled";
 import { Constants } from "../../styles/constants.styles";
+import Headroom from "react-headroom";
 
 export const Navigation = styled.nav`
   padding: 0rem 12rem;
@@ -88,6 +89,7 @@ export const Navigation = styled.nav`
     @media ${device.mobile} {
       flex-direction: column;
       position: fixed;
+      bottom: 0;
       background: ${Constants.colorSecondaryDark};
       height: 100%;
       z-index: 1000;
@@ -99,7 +101,6 @@ export const Navigation = styled.nav`
       flex-direction: column;
       position: fixed;
       background: ${Constants.colorSecondaryDark};
-      height: 100%;
       z-index: 1000;
       overflow: hidden;
       padding: 8rem 0rem;
