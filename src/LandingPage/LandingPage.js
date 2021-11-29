@@ -82,7 +82,7 @@ const LandingPage = () => {
            <Navbar />
            
             <Introduction>
-            <Fade left>
+            <Fade left duration={1000}>
                 <div className='text'>
                     <PrimaryHeading>
                         Introducing Our <br />
@@ -113,7 +113,7 @@ const LandingPage = () => {
                     and large corporate entities.
                 </SecondaryHeading>
             </Leverage>
-            <Fade bottom>
+            <Fade bottom  duration={2000}>
             <About>
                 <div className='box'>
                     <div> </div>
@@ -138,7 +138,7 @@ const LandingPage = () => {
                 </div>
             </About>
             </Fade>
-            <Fade bottom>
+            <Fade bottom  duration={2000}>
             <Offerings>
                 <AlignTextCenter>
                     <SecondaryHeading>Vesti Card Offerings</SecondaryHeading>
@@ -160,7 +160,7 @@ const LandingPage = () => {
                 </div>
             </Offerings>
             </Fade>
-            <Fade>
+            <Fade duration={2000}>
             <DoMore>
                 <AlignTextCenter>
                     <SecondaryHeading>Do more with your vesti card</SecondaryHeading>
@@ -180,7 +180,7 @@ const LandingPage = () => {
                 </div>
             </DoMore>
             </Fade>
-            <Fade>
+            <Fade duration={2000}>
             <CreateVestiCard>
                 <AlignTextCenter>
                     <SecondaryHeading>Create Vesti Card</SecondaryHeading>

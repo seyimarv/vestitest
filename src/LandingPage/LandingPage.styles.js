@@ -349,6 +349,11 @@ export const Footer = styled.footer`
         @media ${device.mobile} {
           width: 50%;
           padding: 2rem 0rem;
+          padding-right: 2rem;
+
+          &:last-child {
+            margin-top: 0rem;
+          }
         }
 
         h2 {
@@ -385,10 +390,6 @@ export const Footer = styled.footer`
       @media ${device.mobile} {
         width: 100%;
         margin-bottom: 2rem;
-
-        li {
-          width: 40%;
-        }
       }
     }
   }

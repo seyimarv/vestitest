@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import { Button } from '../LandingPage.styles'
 import { Navigation, NavigationLinks } from './Navbar.styles'
 import VestiLogo from '../../img/VestiHeaderLogo.svg'
-import Fade from 'react-reveal/Fade';
-
 
 
 
@@ -13,7 +11,7 @@ const Navbar = () => {
         setMobileNavigation(!mobileNavigation)
     }
     return (
-        <Fade top>
+        
         <Navigation mobileNavigation={mobileNavigation}>
             <div className='logo'>
                 <img src={VestiLogo} alt="vestilogoimage" />
@@ -49,7 +47,6 @@ const Navbar = () => {
                 </NavigationLinks>
             </ul>
         </Navigation>
-        </Fade>
     )
 }
 
