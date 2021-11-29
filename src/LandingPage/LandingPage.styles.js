@@ -76,7 +76,7 @@ export const Introduction = styled.section`
 
       @media ${device.mobile} {
           top: 8rem;
-      left: 15%;
+         left: 15%;
       }
 
       }

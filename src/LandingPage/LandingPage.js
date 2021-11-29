@@ -12,6 +12,7 @@ import TwitterLogo from '../img/twitter.svg'
 import YoutubeLogo from '../img/youtube-logo.svg'
 import FacebookLogo from '../img/Facebook.svg'
 import Navbar from './Navbar/Navbar'
+import Fade from 'react-reveal/Fade';
 
 
 const offerings = [
@@ -79,7 +80,9 @@ const LandingPage = () => {
             overflow: 'hidden'
         }}>
            <Navbar />
+           
             <Introduction>
+            <Fade left>
                 <div className='text'>
                     <PrimaryHeading>
                         Introducing Our <br />
@@ -94,11 +97,15 @@ const LandingPage = () => {
                         Order Your Card Now
                     </Button>
                 </div>
+                </Fade>
+                <Fade right>
                 <div className='images'>
                     <img src={VestiCard1} alt="Vesticard" />
                     <img src={VestiCard2} alt="Vesticard" />
                 </div>
+                </Fade>
             </Introduction>
+            
             <Leverage>
                 <SecondaryHeading size='3.6rem' lineHeight='130%'>
                     Leverage support that helps you grow;<br />
@@ -106,6 +113,7 @@ const LandingPage = () => {
                     and large corporate entities.
                 </SecondaryHeading>
             </Leverage>
+            <Fade bottom>
             <About>
                 <div className='box'>
                     <div> </div>
@@ -129,6 +137,8 @@ const LandingPage = () => {
                     </StyledLink>
                 </div>
             </About>
+            </Fade>
+            <Fade bottom>
             <Offerings>
                 <AlignTextCenter>
                     <SecondaryHeading>Vesti Card Offerings</SecondaryHeading>
@@ -149,6 +159,8 @@ const LandingPage = () => {
                     </div>
                 </div>
             </Offerings>
+            </Fade>
+            <Fade>
             <DoMore>
                 <AlignTextCenter>
                     <SecondaryHeading>Do more with your vesti card</SecondaryHeading>
@@ -167,6 +179,8 @@ const LandingPage = () => {
                     }
                 </div>
             </DoMore>
+            </Fade>
+            <Fade>
             <CreateVestiCard>
                 <AlignTextCenter>
                     <SecondaryHeading>Create Vesti Card</SecondaryHeading>
@@ -188,6 +202,7 @@ const LandingPage = () => {
                     <Button>Order Your Card Today</Button>
                 </Center>
             </CreateVestiCard>
+            </Fade>
             <Security>
                 <div className='security-text'>
                     <SecondaryHeading size='1.8rem'>Safety and security guaranteed.</SecondaryHeading>
