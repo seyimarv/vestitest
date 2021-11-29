@@ -63,6 +63,7 @@ export const Introduction = styled.section`
 
       @media ${device.mobile} {
         width: 26rem;
+        top: 5rem;
         left: 50%;
         transform: translateX(-50%)
       }
@@ -74,7 +75,7 @@ export const Introduction = styled.section`
 
 
       @media ${device.mobile} {
-          top: 3rem;
+          top: 8rem;
       left: 15%;
       }
 
