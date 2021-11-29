@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { device } from "../../styles/breakpoints.styled";
 import { Constants } from "../../styles/constants.styles";
-import Headroom from "react-headroom";
+
 
 export const Navigation = styled.nav`
   padding: 0rem 12rem;
