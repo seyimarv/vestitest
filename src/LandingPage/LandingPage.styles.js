@@ -15,7 +15,7 @@ export const Button = styled.button`
   font-size: ${(props) => props.size || "1.8rem"};
   display: flex;
   justify-content: center;
-transition: all .2s;
+  transition: all .2s;
   &:hover {
       transform: translateY(-.3rem)
   }
@@ -34,7 +34,7 @@ export const Introduction = styled.section`
   @media ${device.mobile} {
     flex-direction: column;
     padding:6rem 4rem;
-    padding-bottom: 15rem;
+    padding-bottom: 20rem;
     
   }
 
@@ -47,6 +47,8 @@ export const Introduction = styled.section`
     @media ${device.mobile} {
       left: 1rem;
       top: 2rem;
+      margin: auto;
+      width: 50%;
     }
 
     img {
@@ -61,12 +63,21 @@ export const Introduction = styled.section`
 
       @media ${device.mobile} {
         width: 26rem;
+        left: 50%;
+        transform: translateX(-50%)
       }
 
       &:first-child {
         z-index: 2;
         top: 4rem;
         right: 10rem;
+
+
+      @media ${device.mobile} {
+          top: 3rem;
+      left: 15%;
+      }
+
       }
     }
   }
@@ -205,10 +216,10 @@ export const CreateVestiCard = styled.section`
   padding: 12rem;
 
   @media ${device.tabPort} {
-    padding: 5rem;
+    padding: 12rem 5rem;
   }
   @media ${device.mobile} {
-    padding: 4rem;
+    padding: 12rem 4rem;
     margin: 10rem 0rem;
   }
 
@@ -234,11 +245,11 @@ export const Security = styled.section`
   padding: 9rem;
 
   @media ${device.tabPort} {
-    padding: 4rem;
+    padding: 9rem 4rem;
   }
 
   @media ${device.mobile} {
-    padding: 3rem;
+    padding:9rem 3rem;
     flex-direction: column;
   }
 
@@ -292,11 +303,11 @@ export const Footer = styled.footer`
   background: ${Constants.colorPrimary};
 
   @media ${device.tabPort} {
-    padding: 4rem;
+    padding: 6rem 4rem;
   }
   @media ${device.mobile} {
     flex-direction: column;
-    padding: 3rem;
+    padding:6rem 3rem;
   }
   .footer-heading {
     display: flex;

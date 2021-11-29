@@ -27,7 +27,7 @@ width: 100%;
    
      .toggleIcon {
         position: relative;
-        margin-top: 3.5rem;
+        margin-top: 1.5rem;
         opacity: 0;
 
          @media ${device.mobile} {
