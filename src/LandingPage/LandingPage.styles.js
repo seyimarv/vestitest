@@ -44,6 +44,7 @@ export const Introduction = styled.section`
 
   .images {
     position: relative;
+    right: 0;
     @media ${device.mobile} {
       left: 1rem;
       top: 2rem;

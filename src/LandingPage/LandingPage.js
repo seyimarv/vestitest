@@ -13,7 +13,7 @@ import YoutubeLogo from '../img/youtube-logo.svg'
 import FacebookLogo from '../img/Facebook.svg'
 import Navbar from './Navbar/Navbar'
 import Fade from 'react-reveal/Fade';
-
+import Headroom from 'react-headroom'
 
 const offerings = [
     {
@@ -79,7 +79,9 @@ const LandingPage = () => {
             position: 'relative',
             overflow: 'hidden'
         }}>
+        <Headroom>
            <Navbar />
+        </Headroom>
            
             <Introduction>
             <Fade left duration={1000}>

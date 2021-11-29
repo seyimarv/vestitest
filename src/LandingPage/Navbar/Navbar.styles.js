@@ -3,12 +3,14 @@ import { device } from "../../styles/breakpoints.styled";
 import { Constants } from "../../styles/constants.styles";
 
 export const Navigation = styled.nav`
-  padding: 3rem 12rem;
+  padding: 0rem 12rem;
+  padding-top: 2rem;
   display: flex;
   overflow: hidden;
   width: 100%;
   animation: FadeIn 1s;
-
+  z-index: 100;
+  background: white;
   @media ${device.tabLand} {
     padding: 6rem 8rem;
   }
