@@ -13,6 +13,7 @@ font-size: 5rem;
 color:  #14290A;
 line-height: 130%;
 font-weight: 900;
+margin: 1rem 0rem;
 span {
     color: ${Constants.colorPrimary}
 }
@@ -34,7 +35,7 @@ text-decoration: none;
 font-size: 2rem;
 color: ${Constants.colorPrimary};
 font-weight: 600;
-margin-top: 5rem;
+margin-top: 4rem;
 
 span  {
     font-size: 3rem;

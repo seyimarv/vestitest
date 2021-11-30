@@ -118,13 +118,14 @@ export const About = styled.section`
       order: 2;
       margin: 5rem 0rem;
     }
-    div {
+    img {
       width: 90%;
       height: 100%;
       background-color: ${Constants.colorGrey};
       border-radius: 10px;
 
       @media ${device.mobile} {
+        width: 100%;
         height: 50rem;
       }
     }
@@ -172,14 +173,19 @@ export const Offerings = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    div {
+    img {
       height: 51.14rem;
       width: 53.85rem;
       margin: auto;
       background-color: ${Constants.colorGrey};
       border-radius: 10px;
       @media ${device.tabPort} {
-        width: 50rem;
+        width: 40rem;
+        height: 45rem;
+      }
+      @media ${device.mobile} {
+        width: 100%;
+        height: 52rem;
       }
     }
   }

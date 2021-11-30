@@ -13,7 +13,8 @@ import YoutubeLogo from '../img/youtube-logo.svg'
 import FacebookLogo from '../img/Facebook.svg'
 import Navbar from './Navbar/Navbar'
 import Fade from 'react-reveal/Fade';
-
+import LadyHoldingCards from '../img/istockphoto-1217051968-612x612.jpg'
+import FaangImage from '../img/FaangImages.jpg'
 
 const offerings = [
     {
@@ -75,13 +76,14 @@ const moreOfferings = [
 const LandingPage = () => {
 
     return (
-        <div style={{
+        <div>
+    
+           <Navbar />
+            <div style={{
             position: 'relative',
             overflow: 'hidden'
         }}>
        
-           <Navbar />
-        
             <Introduction>
             <Fade left duration={1000}>
                 <div className='text'>
@@ -94,7 +96,7 @@ const LandingPage = () => {
                         and abroad while saving on currency conversion fees, with the<br />
                         extra layer of security of the Vesti digital card.
                     </Paragraph>
-                    <Button margin='2rem'>
+                    <Button margin='3.5rem'>
                         Order Your Card Now
                     </Button>
                 </div>
@@ -117,14 +119,14 @@ const LandingPage = () => {
             <Fade bottom  duration={2000}>
             <About>
                 <div className='box'>
-                    <div> </div>
+                    <img className='image' src={LadyHoldingCards} alt="Ladingholdingcard" />
 
                 </div>
                 <div className='text'>
                     <SecondaryHeading>
                         What is the Vesti card?
                     </SecondaryHeading>
-                    <Paragraph>
+                    <Paragraph size='1.8rem'>
                         The Vesti card lets you spend using the real exchange rate online, in-store and while you travel - but exists only in your Wise account, either on your phone or laptop.<br /> <br />
 
                         There’s no need to carry your wallet, and no risk of your card being compromised. Your Vesti card has different details to your physical card, and can be frozen after each purchase. That means it’s a safe, smart and simple way to spend no matter where in the world you are.
@@ -156,7 +158,7 @@ const LandingPage = () => {
                         }
                     </div>
                     <div className='box'>
-                        <div></div>
+                        <img src={FaangImage} alt="Faang-images" />
                     </div>
                 </div>
             </Offerings>
@@ -318,7 +320,9 @@ const LandingPage = () => {
                     </FooterParagraph>
                 </div>
             </Footer>
-        </div>
+            </div>
+            </div>
+        
     )
 }
 
