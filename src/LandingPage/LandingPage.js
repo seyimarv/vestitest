@@ -36,15 +36,15 @@ const CreateVestiSteps = [
     {
         title: 'First Step',
 
-        content: 'We use state-of-the-art data encryption when handling your financial details. We use state of the art data encryption when handling financial details.'
+        content: 'Choose the credit card of your choice. Fill in your details and verify with OTP to submit your application'
     },
     {
         title: 'Second Step',
-        content: 'We use state-of-the-art data encryption when handling your financial details. We use state of the art data encryption when handling financial details.'
+        content: 'Post successful validation of your KYC and other documents, your Virtual credit card will be ready instantly'
     },
     {
         title: 'Third Step',
-        content: 'We use state-of-the-art data encryption when handling your financial details. We use state of the art data encryption when handling financial details.'
+        content: 'Get your virtual card and use your creadit card details for safe and secure online transactions'
     }
 ]
 
@@ -187,7 +187,7 @@ const LandingPage = () => {
             <CreateVestiCard>
                 <AlignTextCenter>
                     <SecondaryHeading>Create Vesti Card</SecondaryHeading>
-                    <Paragraph>Create your Vestvirtual card in 3 simple steps.</Paragraph>
+                    <Paragraph>Create your Vesti virtual card in 3 simple steps.</Paragraph>
                 </AlignTextCenter>
                 <div className='createvesti-steps'>
                     {
